@@ -20,18 +20,18 @@ run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 run "nitrogen --restore"
 run "nm-applet"
 run "pamac-tray"
-#run "variety"
 run "xfce4-clipman"
 run "xfce4-power-manager"
-#run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 run slstatus &
 picom -b  --config ~/.config/arco-dwm/picom.conf &
 sxhkd -c ~/.config/arco-dwm/sxhkd/sxhkdrc &
-#run "numlockx on"
-run "volumeicon"
 setxkbmap -layout us,ro -variant ,std -option grp:alt_shift_toggle
+#run "numlockx on"
+#run "volumeicon"
+#run "blueberry-tray"
+#run "variety"
 #run "conky -c $HOME/.config/arco-dwm/system-overview"
 #you can set wallpapers in themes as well
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
